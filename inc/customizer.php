@@ -56,6 +56,6 @@ function marco_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function marco_customize_preview_js() {
-	wp_enqueue_script( 'marco-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script( 'marco-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '1.0', true );
 }
 add_action( 'customize_preview_init', 'marco_customize_preview_js' );
